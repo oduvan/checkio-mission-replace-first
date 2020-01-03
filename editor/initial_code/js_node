@@ -1,6 +1,6 @@
 "use strict";
 
-function replaceFirst(a) {
+function replaceFirst(items) {
     // your code here
     return undefined;
 }
