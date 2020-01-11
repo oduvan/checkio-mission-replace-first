@@ -1,7 +1,7 @@
 <!-- Describe task in general -->
 
 <p>
-    In a given array the first element should become the last one. An empty array or array with only one element should stay the same. 
+    In a given {% if interpreter.slug == "js-node" %}array{% else %}list{% endif %} the first element should become the last one. An empty {% if interpreter.slug == "js-node" %}array{% else %}list{% endif %} or {% if interpreter.slug == "js-node" %}array{% else %}list{% endif %} with only one element should stay the same. 
 </p>
 
 <p style="text-align: center;">
@@ -13,7 +13,7 @@
 </p>
 
 <p>
-    <strong>Output: </strong> {% if interpreter.slug == "js-node" %}Array{% else %}List{% endif %}. 
+    <strong>Output: </strong> {% if interpreter.slug == "js-node" %}Array{% else %}Iterable{% endif %}. 
 </p>
 
 
