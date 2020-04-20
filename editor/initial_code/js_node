@@ -1,21 +1,17 @@
-"use strict";
+import assert from "assert";
 
-function replaceFirst(items) {
+function replaceFirst(values: number[]): number[] {
     // your code here
     return undefined;
 }
 
-var assert = require('assert');
+console.log('Example:');
+console.log(replaceFirst([1, 2, 3, 4]));
 
-if (!global.is_checking) {
-    console.log('Example:');
-    console.log(replaceFirst([1, 2, 3, 4]));
+// These "asserts" are used for self-checking
+assert.deepEqual(replaceFirst([1, 2, 3, 4]), [2, 3, 4, 1]);
+assert.deepEqual(replaceFirst([1]), [1]);
+assert.deepEqual(replaceFirst([]), []);
 
-    // These "asserts" are used for self-checking
-    assert.deepEqual(replaceFirst([1, 2, 3, 4]), [2, 3, 4, 1]);
-    assert.deepEqual(replaceFirst([1]), [1]);
-    assert.deepEqual(replaceFirst([]), []);
-
-    console.log("Coding complete? Click 'Check' to earn cool rewards!");
-}
+console.log("Coding complete? Click 'Check' to earn cool rewards!");
     
