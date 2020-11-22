@@ -1,0 +1,36 @@
+<!-- Describe task in general -->
+
+<p>
+    В данном {% if interpreter.slug == "js-node" %}массиве{% else %}списке{% endif %} первый элемент должен стать последним. Пустой {% if interpreter.slug == "js-node" %}массив{% else %}список{% endif %} или {% if interpreter.slug == "js-node" %}массив{% else %}список{% endif %} из одного элемента не должен измениться.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+</p>
+<!-- Explain input and output values -->
+<p>
+    <strong>Входные данные: </strong> {% if interpreter.slug == "js-node" %}Массив{% else %}Список{% endif %}.
+</p>
+
+<p>
+    <strong>Выходные данные: </strong> {% if interpreter.slug == "js-node" %}Массив{% else %}Набор элементов{% endif %}. 
+</p>
+
+
+<!-- Give some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>Пример:</strong>
+    </p>
+
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">replaceFirst([1, 2, 3, 4]) == [2, 3, 4, 1]
+replaceFirst([1]) == [1]
+replaceFirst([]) == []
+</pre>
+{% else %}
+<pre class="brush: python">replace_first([1, 2, 3, 4]) == [2, 3, 4, 1]
+replace_first([1]) == [1]
+</pre>
+{% endif %}
+</div>
