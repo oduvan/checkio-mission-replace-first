@@ -1,0 +1,36 @@
+<!-- Describe task in general -->
+
+<p>
+    与えられた {% if interpreter.slug == "js-node" %}array{% else %}list{% endif %} の最初の要素を最後尾に移動させたものを返してください。空の {% if interpreter.slug == "js-node" %}array{% else %}list{% endif %} または、要素数が 1 つしかない {% if interpreter.slug == "js-node" %}array{% else %}list{% endif %} が与えられた場合は、与えられた {% if interpreter.slug == "js-node" %}array{% else %}list{% endif %} をそのまま返す必要があります。
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+</p>
+<!-- Explain input and output values -->
+<p>
+    <strong>入力: </strong> {% if interpreter.slug == "js-node" %}Array{% else %}List{% endif %}.
+</p>
+
+<p>
+    <strong>出力: </strong> {% if interpreter.slug == "js-node" %}Array{% else %}Iterable{% endif %}. 
+</p>
+
+
+<!-- Give some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>例:</strong>
+    </p>
+
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">replaceFirst([1, 2, 3, 4]) == [2, 3, 4, 1]
+replaceFirst([1]) == [1]
+replaceFirst([]) == []
+</pre>
+{% else %}
+<pre class="brush: python">replace_first([1, 2, 3, 4]) == [2, 3, 4, 1]
+replace_first([1]) == [1]
+</pre>
+{% endif %}
+</div>
